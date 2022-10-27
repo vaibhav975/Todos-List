@@ -22,7 +22,14 @@ export class AddTodoComponent implements OnInit {
       desc:this.desc,
       active:true
     }
+    this.resetData();
     this.todoAdd.emit(todo)
+  }
+
+  resetData(){
+    this.title="";
+    this.desc="";
+
   }
 
 }
